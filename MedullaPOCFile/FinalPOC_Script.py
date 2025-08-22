@@ -235,7 +235,7 @@ for camp_idx, camp_row in camp_df.iterrows():
             "budget": int(adset_row['adset_budget_amount']),
             "buying_type": adset_row['buy_type'],
             "frequency_cap": int(adset_row['frequency_cap']),
-            "interval_frequency_cap_reset_period": 96,#168
+            "interval_frequency_cap_reset_period":168,
             "prediction_mode": int(adset_row['prediction_mode']),
             "destination_id": adset_row['fbpage'].replace("pg_", "") if adset_row['fbpage'] and adset_row['fbpage'].startswith("pg_") else adset_row['fbpage'],
             "story_event_type": 128,
